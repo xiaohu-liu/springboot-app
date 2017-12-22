@@ -21,6 +21,8 @@ public class RedisServiceImpl implements IRedisService {
     @Autowired
     private RedisTemplate<String, ?> redisTemplate;
 
+
+
     @Override
     public boolean set(final String key, final String value) {
         boolean result = redisTemplate.execute(new RedisCallback<Boolean>() {

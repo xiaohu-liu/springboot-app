@@ -12,7 +12,6 @@ import org.springframework.data.redis.core.StringRedisTemplate;
 import redis.clients.jedis.JedisPoolConfig;
 
 @Configuration
-@PropertySource(value = {"classpath:/conf/redis.properties"})
 @ComponentScan
 @EnableAutoConfiguration
 public class RedisConfig {
